@@ -5,6 +5,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Фотоблог</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            font-size: 24px;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .main-section {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #article1 {
+            width: 70%;
+            border: 1px solid black;
+            float: left;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        #sidebar {
+            display: inline-block;
+            position: fixed;
+            top: 0;
+            right: 0;
+            background-color: #f0f0f0;
+            padding: 10px;
+            width: 30%;
+            box-sizing: border-box; 
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
 </head>
 
 <body>
@@ -19,14 +115,14 @@
         </nav>
     </header>
 
-    <section>
-        <article>
+    <section class="main-section">
+        <article id="article1">
             <h2>Стаття 1</h2>
             <p>Зміст першої статті...</p>
             <img src="image/donutik.jpg" alt="Рожевий донат.">
         </article>
 
-        <h2>Заголовок</h2>
+        <h2 class="sub-heading">Заголовок</h2>
         <p>Спеціальні символи: &copy; &trade; &ne; &micro; &int; &beta; &spades; &hearts;</p>
 
         <table border="1" cellpadding="0" cellspacing="0" width="100%">
@@ -67,7 +163,7 @@
             <dd>Складова частина світильника</dd>
         </dl>
         
-        <form action="/submit" method="post">
+        <form action="/submit" method="post" class="submission-form">
             <!-- Поле введення тексту для імені -->
             <label for="name">Ім'я:</label>
             <input type="text" id="name" name="name" value="Введіть текст" required> 
@@ -103,12 +199,12 @@
 
     </section>
 
-    <aside>
+    <aside id="sidebar">
         <h2>Бічна панель</h2>
         <p>Інформація в бічній панелі...</p>
     </aside>
 
-    <footer>
+    <footer class="site-footer">
         <p>&copy; 2024 Мій сайт. Всі права захищені.</p>
     </footer>
 </body>
