@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фотоблог</title>
+</head>
+
+<body>
+    <header>
+        <h1>Мій сайт</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=5jPJx1vDjws">First Volley</a></li>
+                <li><a href="https://www.youtube.com/watch?v=O0XOPXULMS8">Pink Shoelaces</a></li>
+                <li><a href="https://uk.wikipedia.org/wiki/The_Sims_2">Я люблю Sims 2.</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <article>
+            <h2>Стаття 1</h2>
+            <p>Зміст першої статті...</p>
+            <img src="image/donutik.jpg" alt="Рожевий донат.">
+        </article>
+
+        <h2>Заголовок</h2>
+        <p>Спеціальні символи: &copy; &trade; &ne; &micro; &int; &beta; &spades; &hearts;</p>
+
+        <table border="1" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+                <th width="25%">навигація</th>
+                <th width="75%">заголовок</th>
+            </tr>
+            <tr>
+                <td width="25%" valign="top">Дані 1</td>
+                <td width="75%" valign="top">Lorem</td>
+            </tr>
+            <tr>
+                <td width="25%" valign="top">Дані 2</td>
+                <td width="75%" valign="top">Ipsum</td>
+            </tr>
+            <tr>
+                <td width="25%" valign="top">Linkin</td>
+                <td width="75%" valign="top">Park</td>
+            </tr>
+        </table>
+
+        <ol>
+            <li>Монітор</li>
+            <li>Клавіатура</li>
+            <li>Мишка</li>
+        </ol>
+
+        <ul type="circle">
+            <li>Пікселі</li>
+            <li>Кнопки</li>
+            <li>Провід</li>
+        </ul>
+
+        <dl>
+            <dt>Афірмація</dt>
+            <dd>Коротке позитивне твердження.</dd>
+            <dt>Абажур</dt>
+            <dd>Складова частина світильника</dd>
+        </dl>
+        
+        <form action="/submit" method="post">
+            <!-- Поле введення тексту для імені -->
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" name="name" value="Введіть текст" required> 
+
+            <!-- Поле введення паролю -->
+            <label for="password">Пароль</label>
+            <input type="password" name="text1" size="20" maxlength="50">
+
+            <!-- Поле введення електронної пошти -->
+            <label for="email">Електронна пошта:</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Поле прапорців -->
+            <input type="checkbox" name="lan 1" value="english" checked>англійський
+            <input type="checkbox" name="lan 4" value="french">французький
+
+            <!-- Поле перемикачів -->
+            <input type="radio" name="sex" value="man" checked>чоловік
+            <input type="radio" name="sex" value="woman">жінка
+
+            <!-- Поле вибору файлу для завантаження -->
+            <input type="file" name="load" size="50">
+
+            <!-- Поля для введення тексту -->
+            <textarea cols="20" rows="3" wrap="off"></textarea><br> <!-- Однорядкове -->
+            <textarea cols="35" rows="5" wrap="virtual"></textarea><br> <!-- Багаторядкове -->
+            <textarea cols="50" rows="7" wrap="physical"></textarea> <!-- Багаторядкове з фізичним обгортанням -->
+
+            <!-- Кнопка відправлення форми -->
+            <button type="submit">Відправити</button>
+
+        </form>
+
+    </section>
+
+    <aside>
+        <h2>Бічна панель</h2>
+        <p>Інформація в бічній панелі...</p>
+    </aside>
+
+    <footer>
+        <p>&copy; 2024 Мій сайт. Всі права захищені.</p>
+    </footer>
+</body>
+
+</html>
